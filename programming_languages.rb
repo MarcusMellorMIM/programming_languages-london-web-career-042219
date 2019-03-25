@@ -6,7 +6,7 @@ def reformat_languages(languages)
       new_hash[language]={}
       language_data.each do | type, type_data |
         new_hash[language][:type]=type_data
-        new_hash[language][:style]=style
+        new_hash[language][:style] << style
       end
     end
   end
